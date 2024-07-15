@@ -11,7 +11,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f0f0f0;
+    background: url('name.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Dancing Script', cursive;
 }
 
