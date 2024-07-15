@@ -1,0 +1,103 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Book styles */
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1200px; /* Twice the width of one page */
+    height: 400px;
+    perspective: 1500px;
+    margin-bottom: 20px; /* Ensure space for the music controls */
+}
+
+.page {
+    width: 600px;
+    height: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transition: transform 1s;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header h1 {
+    color: #e0336b;
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#toggleBook {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#toggleBook:hover {
+    background-color: #e0336b;
+}
+
+#countdown {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff4081;
+}
+
+/* Music controls styles */
+.music-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.music-controls button {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.music-controls button:hover {
+    background-color: #e0336b;
+}
